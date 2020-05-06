@@ -23,7 +23,7 @@ services:
 
   server:
     build: ./$SERVER
-    image: $SERVER
+    image: quic-server
     container_name: server
     hostname: server
     stdin_open: true
@@ -45,7 +45,7 @@ services:
 
   client:
     build: ./$CLIENT
-    image: $CLIENT
+    image: quic-client
     container_name: client
     hostname: client
     stdin_open: true
